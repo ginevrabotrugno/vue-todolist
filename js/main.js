@@ -31,11 +31,7 @@ createApp({
 
     methods: {
         doneTask(task) {
-            if (task.done === true) {
-                task.done = false;
-            } else {
-                task.done = true;
-            }
+            task.done = !task.done
         }
     },
 
