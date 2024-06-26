@@ -14,18 +14,13 @@ body {
     background-color: #f0f0f0;
 }
 
-.contenitore {
+#contenitore {
     background-color: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     width: 300px;
     text-align: center;
-}
-
-#logo {
-    width: 100px;
-    margin-bottom: 20px;
 }
 
 input[type="text"] {
@@ -63,4 +58,9 @@ li {
     border: 1px solid #ccc;
     border-radius: 3px;
     text-align: left;
+}
+
+.done {
+    text-decoration: line-through;
+    color: gray;
 }

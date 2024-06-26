@@ -11,11 +11,14 @@
     <title>Vue ToDo List</title>
 </head>
 <body>
-    <div class="contenitore">
-        <img id="logo" src="" alt="Logo">
-        <input type="text" placeholder="Inserisci una nuova task">
+    <div id="contenitore">
+        <h1>ToDo List</h1>
+        <input type="text" placeholder="Inserisci un nuovo task">
         <button>Aggiungi</button>
-        <ul id="listaTask">
+        <ul>
+            <li v-for="(task, index) in tasks" :key="index" :class="{ done: task.done }">
+                <span> {{task.text}} </span>
+            </li>
         </ul>
     </div>
 
