@@ -14,7 +14,7 @@
 <body>
     <div id="contenitore">
         <h1>ToDo List</h1>
-        <input type="text" placeholder="Inserisci un nuovo task" v-model="newTask">
+        <input type="text" placeholder="Inserisci un nuovo task" v-model="newTask" @keydown.enter="addTask">
         <button @click="addTask">Aggiungi</button>
         <ul>
             <li v-for="(task, index) in tasks" :key="index" :class="{ done: task.done }">
