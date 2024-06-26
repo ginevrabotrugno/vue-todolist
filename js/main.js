@@ -32,6 +32,10 @@ createApp({
     methods: {
         doneTask(task) {
             task.done = !task.done
+        },
+
+        deleteTask(index) {
+            this.tasks.splice(index, 1);
         }
     },
 

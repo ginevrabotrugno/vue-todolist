@@ -59,9 +59,21 @@ li {
     border-radius: 3px;
     text-align: left;
     cursor: pointer;
+    position: relative;
 }
 
 .done {
     text-decoration: line-through;
     color: gray;
+}
+
+i {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translate(-50%, -50%);
+}
+
+i:hover {
+    color: red;
 }
