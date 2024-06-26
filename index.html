@@ -16,7 +16,7 @@
         <input type="text" placeholder="Inserisci un nuovo task">
         <button>Aggiungi</button>
         <ul>
-            <li v-for="(task, index) in tasks" :key="index" :class="{ done: task.done }">
+            <li v-for="(task, index) in tasks" :key="index" :class="{ done: task.done }" @click="doneTask(task)">
                 <span> {{task.text}} </span>
             </li>
         </ul>

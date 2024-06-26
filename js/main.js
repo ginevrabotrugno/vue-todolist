@@ -19,13 +19,23 @@ createApp({
                 },
                 { 
                     text: 'Pulire la casa', 
-                    done: true 
+                    done: false 
                 },
                 { 
                     text: 'Preparare la cena', 
                     done: false 
                 }
             ]
+        }
+    },
+
+    methods: {
+        doneTask(task) {
+            if (task.done === true) {
+                task.done = false;
+            } else {
+                task.done = true;
+            }
         }
     },
 
