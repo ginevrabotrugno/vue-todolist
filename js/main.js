@@ -36,8 +36,18 @@ createApp({
 
         deleteTask(index) {
             this.tasks.splice(index, 1);
-        }
-    },
+        },
+
+        addTask() {
+            if (this.newTask !== "") {
+                this.tasks.push({
+                    text: this.newTask,
+                    done: false
+                });
+                this.newTask = '';                    
+            }
+        },
+    }
 
 }).mount('#contenitore')
 
