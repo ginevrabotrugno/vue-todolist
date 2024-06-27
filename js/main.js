@@ -40,7 +40,7 @@ createApp({
 
         addTask() {
             if (this.newTask !== "") {
-                this.tasks.push({
+                this.tasks.unshift({
                     text: this.newTask,
                     done: false
                 });
